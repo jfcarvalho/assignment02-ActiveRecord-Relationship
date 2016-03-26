@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326201821) do
+ActiveRecord::Schema.define(version: 20160326204356) do
 
   create_table "profiles", force: :cascade do |t|
     t.string   "gender"
@@ -24,6 +24,15 @@ ActiveRecord::Schema.define(version: 20160326201821) do
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id"
+
+  create_table "todo_items", force: :cascade do |t|
+    t.date     "due_date"
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "completed",   default: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "todo_lists", force: :cascade do |t|
     t.string   "list_name"
