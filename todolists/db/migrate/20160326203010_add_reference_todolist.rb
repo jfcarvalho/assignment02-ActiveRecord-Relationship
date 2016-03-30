@@ -1,6 +1,6 @@
 class AddReferenceTodolist < ActiveRecord::Migration
   def change
-  	add_foreign_key :user_id, :todo_list, index: true, foreign_key: true
-  	add_foreign_key :todo_list_id, :user, index: true, foreign_key: true
+  		add_reference :todo_lists, :user, index:true 
+  		
   end
 end
