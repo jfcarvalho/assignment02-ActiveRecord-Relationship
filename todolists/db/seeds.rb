@@ -32,25 +32,25 @@ todo_lists = TodoList.create! ([
 
 todo_items = TodoItem.create! ([
 	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[0] },
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[0]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[0]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[0]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[0]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[1] },
 	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[1]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[1]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[1]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[1]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[2] },
 	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[2]} ,
-	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[3]},
-	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[4]}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
-	#{}
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[2]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[2]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[2]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[3] },
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[3]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[3]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[3]} ,
+	{due_date: Date.today, title: "aa", description: "aa", completed: false, todo_list:todo_lists[3]} 
 	])
 
 
