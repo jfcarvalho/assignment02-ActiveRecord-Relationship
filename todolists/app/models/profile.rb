@@ -4,6 +4,7 @@ class Profile < ActiveRecord::Base
   validates :gender, inclusion: { in: %w(male female)}
   validate :sue_male
 
+
   def notbothnull
 		if self.first_name.nil? and self.last_name.nil?  
 			errors.add :last_name, "Error"
@@ -17,6 +18,10 @@ class Profile < ActiveRecord::Base
 		end
 
 end
+
+def self.get_all_profiles(min,max)
+	Profile.find(:all, :conditions =>["birth_year BETWEEN ? AND ? ", min,max]).order("birth_year, ASC")
+ end
 
 
 
