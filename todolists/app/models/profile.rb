@@ -16,6 +16,8 @@ class Profile < ActiveRecord::Base
 			errors.add :first_name, "Error"
 		end
 
-		end
+end
+
+
 
 end
